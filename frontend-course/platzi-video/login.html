@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/login.css">
+    <title>Inicia Sesión</title>
+</head>
+<body>
+    <header class="header">
+        <img
+            class="header__img"
+            src="./assets/logo.png"
+            alt="Logo"
+            tabindex="0"
+        >
+    </header>
+    <section class="login">
+        <div class="login__container">
+            <h2
+                tabindex="0"
+            >
+                Inicia Sesión
+            </h2>
+            <form class="login__container--form">
+                <input
+                    class="input"
+                    type="text"
+                    placeholder="Correo"
+                    aria-label="Correo"
+                >
+                <input
+                    class="input"
+                    type="password"
+                    placeholder="Contraseña"
+                    aria-label="Contraseña"
+                >
+                <button class="button">Inicia sesión</button>
+                <div class="login__container--remember-me">
+                    <label for="cbox1">
+                        <input
+                            id="cbox1"
+                            type="checkbox"
+                            value="checkbox"
+                        >
+                        Recuérdame
+                    </label>
+                    <a href="/">Olvidé mi contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div>
+                    <img src="./assets/icons8-google-50.png" alt="google">
+                    Inicia Sesión con Google
+                </div>
+                <div>
+                    <img src="./assets/icons8-twitter-52.png" alt="twitter">
+                    Inicia Sesión con Twitter
+                </div>
+            </section>
+            <p class="login__container--register">
+                No tienes ninguna cuenta
+                <a href="/">Regístrate</a>
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="/">Términos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
+</html>

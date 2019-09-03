@@ -1,0 +1,5 @@
+**/node_modules/
+**/BigBuckBunny.mp4
+**/.cache/
+**/dist/
+**/package-lock.json
