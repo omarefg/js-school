@@ -1,35 +1,45 @@
 .not-found__container {
-    height: calc(100vh - 200px);
-    background: linear-gradient(#21c08b, #ab88ff);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  height: calc(100vh - 200px);
+  background: linear-gradient(#21c08b, #ab88ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-
 .not-found__container h1 {
-    font-size: 55px;
-    margin: 0;
-    animation: heartbeat 2s infinite;
+  font-size: 55px;
+  margin: 0;
+  animation: heartbeat 2s infinite;
+  cursor: default;
+  user-select: none;
 }
-
-.not-found__container h1, .not-found__container h4 {
-    cursor: default;
-    user-select: none;
+.not-found__container h4 {
+  cursor: default;
+  user-select: none;
 }
 
 @keyframes heartbeat {
-    0%   {transform: scale(1);}
-    6%  {transform: scale(1.2);}
-    12%  {transform: scale(1.5);}
-    18%  {transform: scale(1.2);}
-    24% {transform: scale(1);}
-    100% {}
+  0% {
+    transform: scale(1);
+  }
+  6% {
+    transform: scale(1.2);
+  }
+  12% {
+    transform: scale(1.5);
+  }
+  18% {
+    transform: scale(1.2);
+  }
+  24% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 600px) {
+  .not-found__container {
+    background: transparent;
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .not-found__container {
-        background: transparent;
-    }
-}
+/*# sourceMappingURL=not-found.css.map */
